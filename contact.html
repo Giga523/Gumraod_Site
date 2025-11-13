@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deepnightcalm - Contact Us</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  
+  <style>
+    /* Color Variables from Original Code */
+    :root {
+      --cta-color: #ff6b35; /* Orange - Links */
+      --text-color: #2c3e50; /* Dark Slate - Body Text */
+      --light-bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* Page Background */
+      --hero-bg-gradient: linear-gradient(135deg, #1a237e 0%, #3949ab 100%); /* Header Background */
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      line-height: 1.75;
+      color: var(--text-color);
+      background: var(--light-bg-gradient);
+      min-height: 100vh;
+      padding: 40px 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container {
+      max-width: 600px; /* Reduced max width for simplicity */
+      width: 90%;
+      margin: auto;
+      background: #ffffff;
+      box-shadow: 0 15px 45px rgba(0,0,0,0.15);
+      border-radius: 15px;
+      overflow: hidden;
+      flex-grow: 1;
+    }
+
+    /* Header Section */
+    .contact-header {
+      background: var(--hero-bg-gradient);
+      color: white;
+      padding: 40px 30px;
+      text-align: center;
+    }
+
+    .contact-header h1 {
+      font-size: 32px;
+      font-weight: 800;
+      line-height: 1.2;
+    }
+    
+    .contact-header p {
+        font-size: 16px;
+        opacity: 0.9;
+        margin-top: 10px;
+    }
+
+    /* Content Section */
+    .contact-content {
+      padding: 40px 30px;
+      text-align: center;
+    }
+    
+    .contact-content p {
+        margin-bottom: 25px;
+        font-size: 16px;
+    }
+    
+    /* Main Contact Link Style */
+    .main-contact-link {
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--cta-color);
+        text-decoration: none;
+        display: block;
+        padding: 15px 20px;
+        margin: 20px 0;
+        border: 2px solid var(--cta-color);
+        border-radius: 50px;
+        transition: all 0.3s ease;
+    }
+
+    .main-contact-link:hover {
+        background: var(--cta-color);
+        color: white;
+        box-shadow: 0 8px 20px rgba(255, 107, 53, 0.3);
+    }
+    
+    /* Policy and Home Links */
+    .legal-links {
+        margin-top: 30px;
+        font-size: 14px;
+    }
+    
+    .legal-links a {
+        color: var(--primary-color);
+        text-decoration: none;
+        font-weight: 600;
+        margin: 0 10px;
+    }
+    
+    .legal-links a:hover {
+        color: var(--accent-color);
+    }
+
+    /* Footer - (Matches the standard footer design) */
+    .policy-footer {
+        text-align: center;
+        padding: 20px 30px;
+        font-size: 14px;
+        color: #95a5a6;
+        background: #f4f4f4;
+        border-top: 1px solid #e0e0e0;
+    }
+    
+    .policy-footer a {
+      color: var(--cta-color);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    
+    .policy-footer a:hover {
+        color: var(--primary-color);
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+        body {
+            padding: 0;
+        }
+        .container {
+            border-radius: 0;
+            box-shadow: none;
+            width: 100%;
+        }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    
+    <header class="contact-header">
+      <h1>Need to get in touch?</h1>
+      <p>We're here to support your journey to better sleep.</p>
+    </header>
+
+    <section class="contact-content">
+      
+      <p>The fastest way to reach us for customer support, product inquiries, or refund questions is via email:</p>
+
+      <a href="mailto:support@deepnightcalm.com" class="main-contact-link">
+          Email: support@deepnightcalm.com
+      </a>
+      
+      <p style="margin-top: 30px; font-style: italic; color: #666;">
+          We aim to respond to all inquiries within 1 business day.
+      </p>
+
+      <div class="legal-links">
+          <a href="./index.html">Home</a> | <a href="./privacy.html">Privacy Policy</a> | <a href="./terms.html">Terms and Conditions</a>
+      </div>
+
+    </section>
+
+    <footer class="policy-footer">
+        <p>&copy; 2025 Deepnightcalm. All Rights Reserved.</p>
+    </footer>
+
+  </div>
+</body>
+</html>
